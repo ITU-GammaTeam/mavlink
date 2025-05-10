@@ -332,6 +332,16 @@
         <param index="6">Empty</param>
         <param index="7">Empty</param>
       </entry>
+      <entry value="96" name="MAV_CMD_INTKL_NAV_DOG" hasLocation="true" isDestination="true">
+        <description>Navigate to given DOG States, go behind him.</description>
+        <param index="1" reserved="true" default="0" />
+        <param index="2" reserved="true" default="0" />
+        <param index="3" reserved="true" default="0" />
+        <param index="4" label="DOG Heading" units="deg" minValue="0" maxValue="359.99">North = 0, DOG body-z orientation, which is not included wind. For nav tracking may be add Wind effect! </param>
+        <param index="5" label="DOG Latitude">Latitude in degrees * 10^7</param>
+        <param index="6" label="DOG Longitude">Longitude in degrees * 10^7</param>
+        <param index="7" label="DOG Altitude" units="m">Altitude (Above Home)</param>
+      </entry>
     </enum>
     <enum name="SCRIPTING_CMD">
       <entry value="0" name="SCRIPTING_CMD_REPL_START">
